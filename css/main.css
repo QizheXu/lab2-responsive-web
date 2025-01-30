@@ -1,1 +1,248 @@
- 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Background Image */
+body {
+    background: url('../img/snow.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(53, 53, 53, 0.8);
+    padding: 15px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #98e2f5;
+}
+
+/* Profile Section */
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Card Design */
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px; /* Adds spacing between cards */
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    transition: transform 0.3s;
+
+    h2 {
+        color:black
+    }
+}
+
+h2 {
+    color:black
+}
+
+/* Ensure Button Stays at Bottom */
+.card .btn {
+    margin-top: 20; /* Pushes the button to the bottom */
+    align-self: center; /* Centers the button */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Counter Section */
+.counter-section {
+    margin-top: 50px;
+}
+
+.counter {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Ensure dropdown parent has relative positioning */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.9);
+    list-style: none;
+    padding: 10px;
+    min-width: 150px;
+    top: 100%; /* Ensures it appears directly below */
+    left: 50%; /* Centers relative to "More" */
+    transform: translateX(-50%); /* Adjusts centering */
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+    padding: 8px 10px;
+}
+
+/* Dropdown Links */
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+}
+
+/* Hover Effect */
+.dropdown-menu a:hover {
+    background-color: #444;
+    color: #8dd7f5;
+}
+/* Change Name (Top Left) to White */
+.logo {
+    color: white;
+}
+
+/* Change Page Title and Subtitle to White */
+h1, p1, h3, .profile p, .counter-section {
+    color: white;
+}
+
+/* Change Lab Progress Text to White */
+.lab-progress {
+    color: white;
+}
+
+
+/* Styling for Lab 1 Content */
+.content {
+    background: rgba(0, 0, 0, 0.75); /* Dark semi-transparent background */
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 80%;
+    margin: 50px auto;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Improve Text Readability */
+/* Ensure Font Sizes are Responsive */
+h1, h2, h3 {
+    font-size: 2rem; /* Scales dynamically */
+    color: white;
+    
+}
+
+p, ul, ol {
+    font-size: 1.2rem; /* Ensures text is readable */
+    line-height: 1.8;
+}
+
+/* Ensure Content Box Scales Properly */
+.content {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 2vw; /* Adjusts based on screen width */
+    border-radius: 12px;
+    max-width: 80%;
+    margin: 5vh auto; /* Uses viewport height */
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Prevent Content from Expanding Too Much */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        padding: 5vw;
+    }
+}
+
+/* Ensure Table of Contents Adjusts on Zoom */
+.toc {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Ensure Images Don't Break Layout */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Image Styling */
+.content img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Table of Contents */
+.toc {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Centering Content */
+.centered {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}

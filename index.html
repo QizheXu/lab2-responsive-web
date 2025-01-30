@@ -1,1 +1,69 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qizhe Xu | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Qizhe Xu</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html2.html">Lab 1</a></li>
+                <li><a href="html3.html">Lab 2</a></li>
+                <li class="dropdown">
+                    <a href="#" id="more-toggle">More ▼</a>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <li><a href="https://github.com/Qizhexu" target="_blank">GitHub</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1>Welcome to My GEOG 328 Portfolio</h1>
+        <p1>This website showcases all my Lab assignments for this course.</p1>
+
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="https://github.com/Qizhexu.png" alt="My Profile">
+            <p>Hi, I'm Qizhe Xu! This is my portfolio website for GEOG 328.</p>
+            <a href="https://github.com/Qizhexu" class="btn">Visit My GitHub</a>
+        </div>
+
+        <!-- Lab Showcase -->
+        <div class="card-container">
+            <div class="card">
+                <h2>Lab 1: GitHub Project Management</h2>
+                <p>Learned GitHub repository setup, version control, and Markdown formatting.</p>
+                <a href="html2.html" class="btn">View Lab 1</a>
+            </div>
+
+            <div class="card">
+                <h2>Lab 2: Responsive Web Design</h2>
+                <p>Built a responsive website using HTML, CSS, and JavaScript.</p>
+                <a href="html3.html" class="btn">View Lab 2</a>
+            </div>
+        </div>
+
+        <!-- Animated Section Counter -->
+        <div class="counter-section">
+            <h2>My Lab Progress</h2>
+            <div class="counter">
+                <span id="lab-count">0</span>/10 Labs Completed
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
